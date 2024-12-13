@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f0f0f0;
+  --foreground: #000000;
+  --accent: #ff6b6b;
+  --secondary: #4ecdc4;
+}
+
+.dark {
+  --background: #1a1a1a;
+  --foreground: #ffffff;
+  --accent: #ff6b6b;
+  --secondary: #4ecdc4;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.neutro-box {
+  border: 4px solid var(--foreground);
+  box-shadow: 8px 8px 0 var(--foreground);
+  width: 320px;
+}
+
+.neutro-button {
+  border: 4px solid var(--foreground);
+  background-color: var(--accent);
+  color: var(--background);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.neutro-button:hover {
+  background-color: var(--foreground);
+  color: var(--accent);
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 var(--foreground);
+}
