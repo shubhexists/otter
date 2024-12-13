@@ -48,7 +48,7 @@ You can download a variety of decorations from our decoration library at [otter.
 
 1. Add a festive hat to your avatar:
 ```bash
-otter -i myavatar.png -d holiday_hat.png -o festive_avatar.png
+otter -i myavatar.png -d holiday_hat.png -o festive_avatar.gif
 ```
 
 2. View available commands:
