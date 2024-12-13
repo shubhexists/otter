@@ -18,7 +18,7 @@ export default function Home() {
           >
             <div className="relative w-72 h-72 mb-4">
               <Image
-                src={`/placeholder.svg?height=288&width=288&text=${decoration.title}`}
+                src={`/decoration/${decoration.file_name}`}
                 alt={decoration.title}
                 width={288}
                 height={288}
@@ -29,7 +29,7 @@ export default function Home() {
               {decoration.title.toUpperCase()}
             </h2>
             <a
-              href={`/api/download?id=${decoration.id}`}
+              href={`/decoration/${decoration.file_name}`}
               className="neutro-button inline-flex items-center"
               download
             >
