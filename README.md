@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OTTER 🦦
 
-## Getting Started
+Add cool decorations to your Discord avatar with ease!
 
-First, run the development server:
+## Overview
+
+OTTER is a simple tool that allows you to enhance your Discord avatar with delightful decorations.
+
+CLI is written in Rust btw 🦀
+
+## Installation
+
+You can quickly install OTTER using the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+curl https://otter.shubh.sh/install.sh | bash
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can install it from Cargo (NOT RECOMMENDED) by - 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cargo install otter_dc
+``` 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This will install by the binary name `otter_dc` so it's preffered to use the install script provided
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+otter --input <input> --decoration <decoration> --output <output>
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Options
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Option | Description | Short Flag | Long Flag |
+|--------|-------------|------------|-----------|
+| Input Avatar | Specify the input avatar image | `-i` | `--input` |
+| Decoration | Choose a decoration image | `-d` | `--decoration` |
+| Output Path | Set the output image path | `-o` | `--output` |
+| Help | Print help information | `-h` | `--help` |
+| Version | Print version information | `-V` | `--version` |
 
-## Deploy on Vercel
+## Decorations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can download a variety of decorations from our decoration library at [otter.shubh.sh](https://otter.shubh.sh)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Examples
+
+1. Add a festive hat to your avatar:
+```bash
+otter -i myavatar.png -d holiday_hat.png -o festive_avatar.png
+```
+
+2. View available commands:
+```bash
+otter --help
+```
+
+Thanks :)
